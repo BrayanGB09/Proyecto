@@ -1,0 +1,90 @@
+.body{
+    background-color: whitesmoke;
+
+}
+
+.cuadro{
+    display: grid;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color: white;
+    box-shadow: 0 20px 40px -5px rgba(80,92,103,0.24);
+    border-radius: 20px;
+    width: 600px;
+    height: 450px;
+
+}
+
+.registrarte{
+    color: #1c1e21;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.text{
+    color: #606770;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+}
+
+.hr{
+    margin-bottom: 10px;
+
+}
+
+.nombre{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+    
+}
+
+.apellido{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+
+}
+
+.correo{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+    inline-size: 400px;
+
+}
+
+.password{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+    inline-size: 400px;
+
+}
+
+.registrarse{
+    margin-left: 25%;
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #00a400;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0 32px;
+    border: none;
+
+}

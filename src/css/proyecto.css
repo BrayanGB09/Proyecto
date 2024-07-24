@@ -1,0 +1,82 @@
+body{
+    background-color: whitesmoke;
+
+}
+
+.titulo{
+    text-align: start;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 28px;
+
+}
+
+.cuadro{
+    display: grid;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 10%;
+    background-color: white;
+    box-shadow: 0 20px 40px -5px rgba(80,92,103,0.24);
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+
+}
+
+.correo{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+    inline-size: 400px;
+
+}
+
+.password{
+    font-size: medium;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 40px 50px -5px rgba(80,92,103,0.24);
+    border: 1px solid #dddfe2;
+    inline-size: 400px;
+
+}
+
+.sesion{
+    margin-left: 2.5%;
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+
+}
+
+.recu{
+    margin-left: 30%;
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.crear{
+    margin-left: 16%;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #00a400;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0 32px;
+    border: none;
+
+}
