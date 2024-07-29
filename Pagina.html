@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/css/pagina.css">
+    <script src="src/js/pagina.js"></script>
 </head>
 <body>
-    <p>login</p>
+    
 </body>
 </html>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia 
+                sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="btnInicio">
+            </div>
+        </div>
+    
+        <div class="form-information">
+            <div class="form-information-child">
+                <h2>Crear una cuenta</h2>
+         
+                <form>
+                    <label class="label">
+                        <i class='bx bxs-user'></i>
+                        <input class="input" type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label class="label">
+                        <i class='bx bxl-gmail'></i>
+                        <input class="input" placeholder="Correo Electrónico"  type="text">
+                    </label>
+                    <label class="label">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input class="input" placeholder="Contraseña" type="text">
+                    </label>
+                    <input class="btn1" type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
 
+
+
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Crea tu cuenta</h2>
+                <p>¿Aún no tienes una cuenta? 
+                Creála y únete a nuestra comunidad</p>
+                <input type="button" value="Crear cuenta" id="btnRegistro">
+            </div>
+        </div>
+    
+        <div class="form-information">
+            <div class="form-information-child">
+                <h2>Inicio de Sesión</h2>
+         
+                <form>
+                    </label>
+                    <label class="label">
+                        <i class='bx bxl-gmail'></i>
+                        <input class="input" placeholder="Correo Electrónico"  type="email">
+                    </label>
+                    <label class="label">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input class="input" placeholder="Contraseña" type="password">
+                    </label>
+                    <input class="btn1" type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
