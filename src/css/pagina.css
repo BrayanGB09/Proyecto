@@ -57,7 +57,7 @@ body{
     padding: 10px 20px;
     color: #666;
     cursor: pointer;
-    transition: backgraund-color .3s ease;
+    transition: background-color .3s ease
 }
 
 .info-childs input:hover{
@@ -115,7 +115,7 @@ form{
     color: black;
 }
 
-.btn1{
+.btn{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -127,7 +127,7 @@ form{
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 
-.btnRegistro:hover{
+.btn:hover{
     background-color: #9191bd;
 
 }

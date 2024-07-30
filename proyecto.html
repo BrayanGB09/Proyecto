@@ -4,43 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="src/css/proyecto.css">
-</head>
+</head>  
 <body>
-    <form action="">
-        <div class="textPrincipal">
-            <h1 class="titulo1">Agenda y bloc de Notas</h1>
+    <h1>Almacenamiento de Datos</h1>
+    
+    <input id="campoTexto" type="text">
 
-            <h3 class="text">Somos los #1 en el mundo, únete y forma 
-                <br>
-            parte de la nueva revolución tecnológica</h3>
-        </div>
+    <select id="seleccionar">
+        <option id="evento">Evento</option>
+        <option id="tarea">Tarea</option>
+    </select>
 
-        <div class="cuadro">
-            <h1 class="titulo2">Inicio de sesión</h1>
+    <button id="btnGuardar">Guardar</button>
+    
+    <div id="contenedorPrincipal">
 
-            <input class="correo" id="sesion" placeholder="Correo electrónico o número de teléfono" type="text">
+    </div>
 
-                <br>
+    <div class="evento">
+        <h1>Evento</h1>
+    </div>
 
-            <input class="password" id="contraseña" placeholder="Contraseña" type="password">
-            
-                <br>
-
-            <button class="sesion" id="btnI">Iniciar sesión</button>
-            
-                <br>
-
-            <p class="recu" id="btnC">¿Olvidaste tu contraseña?</p>
-
-            <div><hr></div>
-                <br>
-
-            <button class="crear" id="btnCrear">Crear cuenta nueva</button>
-                <br>
-        </div>
-    </form>
+    <div class="tarea">
+        <h1>Tarea</h1>
+    </div>
 
     <script src="src/js/proyecto.js"></script>
 </body>

@@ -6,12 +6,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="src/css/pagina.css">
-    <script src="src/js/pagina.js"></script>
 </head>
-<body>
-    
-</body>
-</html>
 <body>
     <div class="container-form register">
         <div class="information">
@@ -19,7 +14,7 @@
                 <h2>Bienvenido</h2>
                 <p>Para unirte a nuestra comunidad por favor inicia 
                 sesión con tus datos</p>
-                <input type="button" value="Iniciar Sesión" id="btnInicio">
+                <input type="button" value="Iniciar Sesión" id="btn1">
             </div>
         </div>
     
@@ -30,22 +25,21 @@
                 <form>
                     <label class="label">
                         <i class='bx bxs-user'></i>
-                        <input class="input" type="text" placeholder="Nombre Completo">
+                        <input class="input" type="text" placeholder="Nombre Completo" id="nombre">
                     </label>
                     <label class="label">
                         <i class='bx bxl-gmail'></i>
-                        <input class="input" placeholder="Correo Electrónico"  type="text">
+                        <input class="input" placeholder="Correo Electrónico"  type="email" id="correo">
                     </label>
                     <label class="label">
                         <i class='bx bxs-lock-alt'></i>
-                        <input class="input" placeholder="Contraseña" type="text">
+                        <input class="input" placeholder="Contraseña" type="password" id="contraseña">
                     </label>
-                    <input class="btn1" type="submit" value="Registrarse">
+                    <button class="btn" id="btnRegistro">Registrarse</button>
                 </form>
             </div>
         </div>
     </div>
-
 
 
 
@@ -55,7 +49,7 @@
                 <h2>Crea tu cuenta</h2>
                 <p>¿Aún no tienes una cuenta? 
                 Creála y únete a nuestra comunidad</p>
-                <input type="button" value="Crear cuenta" id="btnRegistro">
+                <input type="button" value="Crear cuenta" id="btn2">
             </div>
         </div>
     
@@ -73,10 +67,11 @@
                         <i class='bx bxs-lock-alt'></i>
                         <input class="input" placeholder="Contraseña" type="password">
                     </label>
-                    <input class="btn1" type="submit" value="Iniciar Sesión">
+                    <button class="btn" id="btnInicio">Iniciar Sesión</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="src/js/pagina.js"></script>
 </body>
 </html>
