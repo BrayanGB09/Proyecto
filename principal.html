@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/proyecto.css">
-</head>  
+    <link rel="stylesheet" href="src/css/principal.css">
+</head>
 <body>
     <h1>Almacenamiento de Datos</h1>
-    
-    <input placeholder="Evento o Tarea" id="campoTexto" type="text">
-    <br>
-    <br>
-    <input placeholder="Fecha" id="fecha" type="text">
-    <br>
-    <br>
 
+    <input placeholder="Evento o Tarea" id="campoTexto" type="text">
+
+        <br>
+        <br>
+
+    <input placeholder="Fecha" id="campoFecha" type="text">
 
     <select name="seleccionar" id="seleccionar">
-        <option id="evento">Evento</option>
-        <option id="tarea">Tarea</option>
+        <option value="evento">Evento</option>
+        <option value="tarea">Tarea</option>
     </select>
-    <br>
-    <br>
 
-
-    <button id="Guardar">Guardar</button>
+    <button id="guardar">Guardar</button>
 
     <div id="contenedorEvento">
-        <h1>Evento</h1>
+        <h2>Evento</h2>
     </div>
+        
+        <br>
+        <br>
 
     <div id="contenedorTarea">
-        <h1>Tarea</h1>
+        <h2>Tarea</h2>
     </div>
 
-    <script src="src/js/principal"></script>
+    <script src="src/js/principal.js"></script>
 </body>
 </html>

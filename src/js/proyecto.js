@@ -31,7 +31,7 @@ Guardar.addEventListener("click", function () {
     divEvento.appendChild(btnEliminar)
     divEvento.appendChild(btnEditar)
 
-    evento.appendChild(divEvento)               
+    divEvento.appendChild(evento)               
 
   } 
    
