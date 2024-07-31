@@ -1,29 +1,61 @@
-const btnGuardar = document.getElementById("btnGuardar")
+const Guardar = document.getElementById("Guardar")
 const campoTexto = document.getElementById("campoTexto")
-const contenedorPrincipal = document.getElementById("contenedorPrincipal")
+
+const fecha = document.getElementById("fecha")
+const contenedorEvento = document.getElementById("contenedorEvento")
+const contenedorTarea = document.getElementById("contenedorTarea")
 const seleccionar = document.getElementById("seleccionar")
+const evento = document.getElementById("evento")
+const tarea = document.getElementById("tarea")
 
-btnGuardar.addEventListener("click", function () {
 
-if (seleccionar.value) {
+Guardar.addEventListener("click", function () {
+  
+  if (seleccionar.value === "evento") {
     const textoEvento = document.createElement("p")
     const btnEliminar = document.createElement("button")
     const btnEditar = document.createElement("button")
+    const btnGuardar = document.createElement("button")
     const divEvento = document.createElement("div")
-    const campoEvento = document.createElement("input")
-
-    textoEvento.innerHTML = campoEvento.value
-    contenedorPrincipal.appendChild(textoEvento)
-
-    contenedorPrincipal.appendChild(divEvento)
+     
+    contenedorEvento.appendChild(divEvento)
 
     btnEditar.innerHTML = "Eliminar"
+    btnEliminar.innerHTML = "Editar"
+    btnGuardar.innerHTML = "Guardar"
+
+    let concatenacion = campoTexto.value + " " + fecha.value
+    textoEvento.innerHTML = concatenacion
+
+    divEvento.appendChild(textoEvento)
     divEvento.appendChild(btnEliminar)
+    divEvento.appendChild(btnEditar)
 
-    btnEliminar.addEventListener("click", function () {
-        divEvento.removeChild
-    })
-}
+    evento.appendChild(divEvento)               
 
+  } 
+   
+  if (seleccionar.value === "tarea") {
+    const textoTarea = document.createElement("p")
+    const btnEliminar = document.createElement("button")
+    const btnEditar = document.createElement("button")
+    const btnGuardar = document.createElement("button")
+    const divTarea = document.createElement("div")
+     
+    contenedorTarea.appendChild(divTarea)
+
+    btnEditar.innerHTML = "Eliminar"
+    btnEliminar.innerHTML = "Editar"
+    btnGuardar.innerHTML = "Guardar"
+
+    let concatenacion = campoTexto.value + " " + fecha.value
+    textoTarea.innerHTML = concatenacion
+
+    divTarea.appendChild(textoTarea)
+    divTarea.appendChild(btnEliminar)
+    divTarea.appendChild(btnEditar)
+
+    tarea.appendChild(divTarea)               
+
+  }
 })
-
