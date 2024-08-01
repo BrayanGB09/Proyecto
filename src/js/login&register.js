@@ -23,7 +23,7 @@ const contraseña = document.getElementById("contraseña");
 
 const listaUsuario = JSON.parse(localStorage.getItem("listaUsuario")) || [];
 
-btnIni.addEventListener("click", function () {
+btnInicio.addEventListener("click", function () {
     const validarCorreo = correo.value;
     const validarContraseña = contraseña.value;
    
@@ -43,9 +43,10 @@ btnIni.addEventListener("click", function () {
     }
 
     if (encontrarUsuario) {
-        window.location = "http://127.0.0.1:5500/Proyecto/proyecto.html";
-    } else {
         alert("Nombre, correo o contraseña incorrectos.");
+    } else {
+        window.location = "http://127.0.0.1:5500/Proyecto/principal.html";
+        
     }
 })
 

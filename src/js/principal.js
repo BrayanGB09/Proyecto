@@ -1,23 +1,22 @@
 const campoTexto = document.getElementById("campoTexto")
 const campoFecha = document.getElementById("campoFecha")
-const guardar = document.getElementById("guardar")
+const btnGuardar = document.getElementById("btnGuardar")
 const seleccionar = document.getElementById("seleccionar")
 const contenedorEvento = document.getElementById("contenedorEvento")
 const contenedorTarea = document.getElementById("contenedorTarea")
 
-guardar.addEventListener("click", function () {
+btnGuardar.addEventListener("click", function () {   
+    
     if (seleccionar.value === "evento") {
-        
+
         const textoEvento = document.createElement("p")
         const btnEliminar = document.createElement("button")
         const btnEditar = document.createElement("button")
-        const btnGuardar = document.createElement("button")
         const modificarEvento = document.createElement("input")
         const divEvento = document.createElement("div")
 
         btnEliminar.innerHTML = "Eliminar"
         btnEditar.innerHTML = "Editar"
-        btnGuardar.innerHTML = "Guardar"
 
         textoEvento.innerHTML = campoTexto.value
         contenedorEvento.appendChild(textoEvento)
@@ -49,15 +48,15 @@ guardar.addEventListener("click", function () {
     else{
 
         if (seleccionar.value === "tarea") {
+
             const textoTarea = document.createElement("p")
-            const btnEliminar = document.createElement("button")
-            const btnEditar = document.createElement("button")
-            const btnGuardar = document.createElement("button")
+            const btnEliminar2 = document.createElement("button")
+            const btnEditar2 = document.createElement("button")
+            const modificarTarea = document.createElement("input")
             const divTarea = document.createElement("div")
 
-            btnEliminar.innerHTML = "Eliminar"
-            btnEditar.innerHTML = "Editar"
-            btnGuardar.innerHTML = "Guardar"
+            btnEliminar2.innerHTML = "Eliminar"
+            btnEditar2.innerHTML = "Editar"
 
             textoTarea.innerHTML = campoTexto.value
             contenedorTarea.appendChild(textoTarea)
@@ -68,13 +67,22 @@ guardar.addEventListener("click", function () {
             textoTarea.innerHTML = conca2
 
             divTarea.appendChild(textoTarea)
-            divTarea.appendChild(btnEliminar)
-            divTarea.appendChild(btnEditar)
+            divTarea.appendChild(btnEliminar2)
+            divTarea.appendChild(btnEditar2)
+            divTarea.appendChild(modificarTarea)
 
-            btnEliminar.addEventListener("click", function () {
+            btnEliminar2.addEventListener("click", function () {
                 divTarea.removeChild(textoTarea)
-                divTarea.removeChild(btnEliminar)
-                divTarea.removeChild(btnEditar)})
+                divTarea.removeChild(btnEliminar2)
+                divTarea.removeChild(btnEditar2)
+                divTarea.removeChild(modificarTarea)
+
+            })
+
+            btnEditar2.addEventListener("click", function () {
+                textoTarea.innerHTML = modificarTarea.value
+    
+            })
 
         }
     }
